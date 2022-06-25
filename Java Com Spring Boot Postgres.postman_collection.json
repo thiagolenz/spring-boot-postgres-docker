@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "f0651bc5-91e8-4b8b-8c26-d0a3342ffac5",
+		"name": "Java Com Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tarefas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Tarefa durante o video\",\n    \"descricao\": \"Subir o video para o youtube\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tarefas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"titulo\": \"Criar Vídeo tutorial - outra informacao\",\n    \"descricao\": \"Criar um vídeo sobre Spring Boot\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tarefas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tarefas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarefas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
